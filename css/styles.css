@@ -10,13 +10,9 @@ nav.scrolled {
 
 .navbar {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin-bottom: 50px;
   z-index: 500;
-  padding: 20px 0;
-  background-color: transparent;
+  padding: 20px 20px;
+  background-color: #F6F8FA;
   transition: ease-in-out 0.3s;
   width: 100%;
 }

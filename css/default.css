@@ -145,7 +145,6 @@ span {
 
 .btn-blue:hover {
   background-color: darken(var(--default-btn), 10%);
-  /* Example hover effect */
 }
 
 .fa-circle-play {
