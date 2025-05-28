@@ -82,7 +82,7 @@ h2 {
   margin: 15px 10px;
 }
 
-img {
+.logo img {
   width: 100%;
   max-width: 100px;
   height: auto;
@@ -131,8 +131,6 @@ span {
   border-radius: 50px;
   width: 120px;
   height: 45px;
-  margin: 0 auto;
-  display: inline-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,7 +142,8 @@ span {
 }
 
 .btn-blue:hover {
-  background-color: darken(var(--default-btn), 10%);
+  background-color: var(--white);
+  color: var(--default-btn);
 }
 
 .fa-circle-play {
