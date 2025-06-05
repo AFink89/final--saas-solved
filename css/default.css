@@ -66,7 +66,7 @@ a:hover {
 }
 
 p {
-  margin-top: 5px;
+  margin: var(--size-15) 0;
   color: var(--gray);
   font-size: medium;
 }
@@ -92,6 +92,10 @@ span {
   color: var(--default-btn);
 }
 
+span:hover {
+  color: blueviolet;
+}
+
 .bg-contrast {
   background-color: var(--white);
   padding: var(--size-30) 0;
@@ -114,7 +118,6 @@ span {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: var(--white);
   text-align: center;
   cursor: pointer;
   user-select: none;
@@ -126,8 +129,8 @@ span {
 }
 
 .btn-blue {
-  background-color: var(--default-btn) !important;
   color: var(--white);
+  background-color: var(--default-btn);
   border-radius: 50px;
   width: 120px;
   height: 45px;
@@ -144,6 +147,8 @@ span {
 .btn-blue:hover {
   background-color: var(--white);
   color: var(--default-btn);
+  border: 0.063rem solid var(--default-btn);
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.4);
 }
 
 .fa-circle-play {
