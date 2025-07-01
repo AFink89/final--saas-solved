@@ -32,7 +32,7 @@ body {
   line-height: 1.6;
   letter-spacing: 0;
   color: var(--font-color-dark);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
   max-width: 100%;

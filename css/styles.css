@@ -118,6 +118,10 @@ nav.scrolled {
   width: 100%;
 }
 
+.heroText h2 {
+  width: 50%;
+}
+
 .heroCard2 {
   display: flex;
   align-items: center;
@@ -269,7 +273,7 @@ nav.scrolled {
 }
 
 .why-front-bg .block-text {
-  max-width: 800px;
+  width: 550px;
   margin: 0 auto;
   text-align: center !important;
 }
@@ -344,7 +348,7 @@ nav.scrolled {
 
 .pricing .pricingTable {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--size-10);
   width: 100%;
   justify-items: center;
@@ -353,7 +357,8 @@ nav.scrolled {
 
 .pricing .featuredCard {
   grid-column: 1;
-  grid-row: span 2;
+  grid-row: span 3;
+  height: 100%;
   background-color: var(--highlight-bg);
   padding: var(--size-20);
   text-align: left;
@@ -381,7 +386,7 @@ nav.scrolled {
 
 .pricing .card {
   background-color: var(--card-bg);
-  padding: var(--size-5);
+  padding: var(--size-10);
   text-align: left;
   margin: 0;
   border: none;
@@ -404,8 +409,14 @@ nav.scrolled {
 
 .card-header {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: var(--size-10);
+}
+
+.card-header h4 {
+  width: auto;
+  margin: 0;
 }
 
 .pricing .btn-blue {
@@ -542,6 +553,19 @@ nav.scrolled {
   height: 50px;
   box-sizing: border-box;
 }
+
+.contactForm .txtBox textarea {
+  width: 100%;
+  padding: var(--size-10);
+  font-size: var(--size-16);
+  font-weight: 400;
+  background-color: var(--white);
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: var(--size-5);
+  resize: none;
+  box-sizing: border-box;
+}
+
 
 .contactForm .txtBox {
   margin-top: var(--size-20);
@@ -696,38 +720,4 @@ button {
   color: var(--white);
   cursor: pointer;
   font-weight: bold;
-}
-
-.country-select {
-  width: 180px;
-  padding: 10px;
-  font-size: 1rem;
-}
-
-.country-select option {
-  padding: 8px;
-  background-size: 20px 15px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  text-indent: 25px;
-}
-
-.usa {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg");
-}
-
-.canada {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg");
-}
-
-.uk {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg");
-}
-
-.australia {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg");
-}
-
-.germany {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg");
 }
