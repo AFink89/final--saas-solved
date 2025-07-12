@@ -10,7 +10,7 @@
   }
 
   .bg-contrast {
-    padding: none;
+    padding: 0;
   }
 
   .container {
@@ -19,9 +19,8 @@
     padding-right: var(--size-10);
   }
 
-
   .navbar {
-    padding: var(--size-30);
+    padding: var(--size-15);
     width: 100%;
   }
 
@@ -109,15 +108,6 @@
     color: var(--white);
     text-align: center;
     white-space: nowrap;
-  }
-
-  section,
-  header,
-  footer,
-  .container,
-  .pricingTable {
-    margin: 0 auto;
-    padding: 20px;
   }
 
   h1,
@@ -363,5 +353,277 @@
     animation: none !important;
     transition: none !important;
     transform: none !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  .navbar {
+    padding: var(--size-15);
+    width: 100%;
+  }
+
+  .navbar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-brand img {
+    max-width: 160px;
+    height: auto;
+  }
+
+  .nav-link a {
+    color: var(--font-color-dark);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    font-family: "Hind", sans-serif;
+    margin-right: 2.5rem;
+    line-height: 1.25rem;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .nav-link a:hover {
+    color: var(--default-btn);
+  }
+
+  .navbar-toggler {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-toggler span {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav li.nav-link a {
+    color: var(--font-color-dark);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    font-family: "Hind", sans-serif;
+    line-height: 1.25rem;
+    display: block;
+    padding: var(--size-5) 0;
+    text-decoration: none;
+  }
+
+  .navbar-nav li.nav-link a:hover {
+    color: var(--default-btn);
+  }
+
+  .navbar-nav.show {
+    display: flex;
+  }
+
+  img,
+  svg,
+  video,
+  canvas,
+  figure,
+  table,
+  iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  section,
+  header,
+  footer,
+  .container,
+  .pricingTable {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    gap: var(--size-30);
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--size-20);
+  }
+
+  .heroText {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroText h2 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .heroText p {
+    max-width: 60%;
+    display: flex;
+    margin: 20px auto;
+    font-size: larger;
+    text-align: center;
+  }
+
+  .heroBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-20);
+  }
+
+  .heroBtns a {
+    text-align: center;
+  }
+
+  .heroLogos {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .heroLogos .logos {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .why-front-bg .block-text {
+    width: 100%;
+    max-width: 24rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .frontTable {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    row-gap: var(--size-10);
+    width: 100%;
+    max-width: 24rem;
+    margin: 0 auto;
+  }
+
+
+  .front-card {
+    display: contents;
+  }
+
+  .front-card i {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .front-card p {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .front-divider {
+    display: none;
+  }
+
+  .pricing .pricingTable {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: var(--size-20);
+    width: auto;
+    justify-items: center;
+    margin: 0 50px;
+  }
+
+  .pricing .featuredCard {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    text-align: center;
+    padding: var(--size-20);
+  }
+
+  .pricing .featuredCard p {
+    text-align: left;
+  }
+
+  .pricing .featuredCard .pricingFooter {
+    text-align: center;
+  }
+
+  .pricing .card {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .pricing .card img {
+    display: flex;
+    margin: 0;
+    padding-bottom: var(--size-10);
+  }
+
+  .card-header {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .card-header h4 {
+    margin-bottom: var(--size-10);
+    text-align: left;
+  }
+
+  .pricing .pricingBtn {
+    align-self: flex-start;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .btn-blue {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .companyInfo .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .companyCard {
+    text-align: center;
   }
 }

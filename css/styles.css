@@ -263,13 +263,12 @@ nav.scrolled {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: var(--size-50);
 }
 
 .why-front-bg .container {
   display: flex;
   flex-direction: column;
-  gap: var(--size-30);
+  gap: var(--size-10);
 }
 
 .why-front-bg .block-text {
@@ -307,18 +306,23 @@ nav.scrolled {
 }
 
 .front-card i {
-  font-size: 24px;
-  margin-bottom: var(--size-10);
-  color: #ccc;
+  font-size: 0.24rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  color: var(--default-btn);
+  background-color: var(--shading-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .front-card p {
-  text-align: center;
-  white-space: nowrap;
-  overflow: visible;
-  width: 100%;
+  margin: 0;
+  white-space: normal;
+  text-align: left;
+  font-weight: 600;
   color: var(--black);
-  font-weight: bold;
 }
 
 .front-divider:nth-child(even) {
