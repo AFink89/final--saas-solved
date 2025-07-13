@@ -534,7 +534,7 @@ nav.scrolled {
 
 .contactForm form {
   width: 100%;
-  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contactForm .nameGroup input,
@@ -648,13 +648,9 @@ nav.scrolled {
   text-align: left;
 }
 
-.companyCard:first-child {
-  grid-column: span 2;
-  margin-left: -50px;
-}
 
 .companyCard h4 {
-  margin-bottom: var(--size-30);
+  margin-bottom: var(--size-10);
   margin-top: 0;
   font-size: var(--font-size-large);
   color: var(--dark-blue);
@@ -666,8 +662,9 @@ nav.scrolled {
 }
 
 .companyCard ul li {
-  margin-bottom: var(--size-10);
+  margin-bottom: var(--size-5);
   font-weight: normal;
+  white-space: nowrap;
 }
 
 .companyCard ul li a {
@@ -706,7 +703,7 @@ button {
 }
 
 .companyCard i {
-  margin-right: var(--size-10);
+  margin-right: var(--size-5);
   color: var(--primary-color);
 }
 

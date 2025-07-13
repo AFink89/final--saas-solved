@@ -9,7 +9,7 @@
     width: auto;
   }
 
-  .bg-contrast {
+  .bg-header {
     padding: 0;
   }
 
@@ -64,6 +64,8 @@
     cursor: pointer;
     align-self: flex-end;
     margin-bottom: 0.5rem;
+    outline: none;
+    box-shadow: none;
   }
 
   .navbar-toggler span {
@@ -108,6 +110,15 @@
     color: var(--white);
     text-align: center;
     white-space: nowrap;
+  }
+
+  section,
+  header,
+  footer,
+  .container,
+  .pricingTable {
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   h1,
@@ -306,6 +317,7 @@
     justify-content: center;
     display: flex;
     margin: 0 auto;
+    width: 90%;
   }
 
   .companyInfo .container {
@@ -404,6 +416,15 @@
     cursor: pointer;
     align-self: flex-end;
     margin-bottom: 0.5rem;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
   }
 
   .navbar-toggler span {
@@ -458,6 +479,11 @@
   .pricingTable {
     margin: 0 auto;
     max-width: 100%;
+  }
+
+  .bg-contrast {
+    padding: 0;
+    margin: 0 auto;
   }
 
   .hero-wrapper {
@@ -614,6 +640,34 @@
     margin-left: auto;
     margin-right: auto;
     width: auto;
+  }
+
+  .hireUs .container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .hireUsTxt {
+    margin: 0 auto;
+  }
+
+  .hireUsTxt hr {
+    display: flex;
+    width: 100%;
+  }
+
+  .profileImgs {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactForm {
+    display: flex;
+    align-items: center;
+    width: 90%;
   }
 
   .companyInfo .container {
