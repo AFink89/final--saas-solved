@@ -299,6 +299,7 @@ nav.scrolled {
   text-align: center;
   min-height: 100px;
   height: 100%;
+  gap: 10px;
 }
 
 .front-card:nth-child(odd) {
@@ -319,8 +320,8 @@ nav.scrolled {
 
 .front-card p {
   margin: 0;
-  white-space: normal;
-  text-align: left;
+  white-space: nowrap;
+  text-align: center;
   font-weight: 600;
   color: var(--black);
 }

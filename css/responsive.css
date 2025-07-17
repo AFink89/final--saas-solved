@@ -369,10 +369,22 @@
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
+
+  * {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
 
   .navbar {
     padding: var(--size-15);
+    margin: 0 auto;
     width: 100%;
   }
 
@@ -398,9 +410,9 @@
     font-size: 0.8125rem;
     font-weight: 600;
     font-family: "Hind", sans-serif;
-    margin-right: 2.5rem;
+    margin-right: 1rem;
     line-height: 1.25rem;
-    white-space: nowrap;
+    white-space: normal;
     display: inline-block;
   }
 
@@ -494,7 +506,6 @@
     gap: var(--size-30);
     align-items: center;
     justify-content: center;
-    padding: 0 var(--size-20);
   }
 
   .heroText {
@@ -510,7 +521,7 @@
   }
 
   .heroText p {
-    max-width: 60%;
+    max-width: 100%;
     display: flex;
     margin: 20px auto;
     font-size: larger;
@@ -532,6 +543,10 @@
   .heroLogos {
     max-width: 100%;
     margin: 0 auto;
+    gap: 0;
+
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 0;
   }
 
   .heroLogos .logos {
@@ -584,7 +599,7 @@
     gap: var(--size-20);
     width: auto;
     justify-items: center;
-    margin: 0 50px;
+    margin: 0 10px;
   }
 
   .pricing .featuredCard {
@@ -667,7 +682,16 @@
   .contactForm {
     display: flex;
     align-items: center;
-    width: 90%;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .nameGroup {
+    flex-direction: column;
+  }
+
+  .selector {
+    flex-direction: column;
   }
 
   .companyInfo .container {
