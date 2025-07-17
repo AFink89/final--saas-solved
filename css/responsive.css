@@ -541,12 +541,10 @@
   }
 
   .heroLogos {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
-    gap: 0;
-
+    gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 0;
   }
 
   .heroLogos .logos {
